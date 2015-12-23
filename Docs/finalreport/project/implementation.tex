@@ -1,0 +1,36 @@
+\chapter{Implémentation}
+\section{Web Service}
+\paragraph{}Le Web Service se lance par le biais de la classe Application.\\
+Une fois lancé, le serveur se configure grâce aux éléments de la classe WebServiceConfigPays.\\
+Il attend ensuite une requête d'un client, et c'est la classe PaysEndPoint qui traitera cette requête.\\
+La classe PaysEndPoint crée un objet PaysRepository et en fonction du type de requête reçu appelle une méthode de cet objet.\\
+L'objet Pays Repository charge une fabrique de beans, des objets gérés par Spring et Spring-WS.\\
+Cette fabrique est utilisée par la classe IPaysMetier qui crée un objet de type PaysDao et récupère un bean.\\
+Elle applique ensuite une méthode de l'objet PaysDao au bean récupéré.\\
+La méthode de l'objet PaysDao utilise JDBC pour récuperer les informations nécéssaires dans la base de données.\\
+Une fois les informations nécéssaires récupérées, la classe PaysEndpoint renvoie une réponse au client.\\
+
+\section{Client Java}
+\paragraph{} Le client se lance à partir de la classe Application.\\
+Une fois lancé, il commence à configurer les paramètres nécessaires à la communication avec le web service situé dans la classe PaysConfiguration.\\
+Cette classe charge le fichier XML de configuration géré par Spring et Spring-WS et crée un objet PaysClient puis et le renvoie à la classe Application.\\
+L'objet PaysClient crée un objet Config qui configurera les paramètres de cet objet PaysClient.\\
+La classe application utilise alors l'objet PaysClient récupéré précédemment pour envoyer une requête au web service.\\
+
+\section{Client PHP}
+\paragraph{} Le client PHP se présente sous la forme d'un site internet. L'implémentation des fonctions, plus particulièrement celles relatives à SOAP, est détaillée dans la documentation Administrateur. \\
+Il constitue l'équivalent du Client Java en php, avec toutefois une interface graphique soignée et un formulaire intuitif pour effectuer les requêtes.
+
+\section{Application de Gestion}
+\paragraph{} Une fois l'application de gestion lancé, il est nécessaire de se connecter grâce à un nom d'utilisateur et un mot de passe.\\
+La connexion se fait quand l'application crée un objet MainHandler qui va récupèrer un objet paysMetier grâce au fichier de configuration XML géré par Spring et Spring-WS.\\
+L'objet paysMetier va créer un objet paysDao et lui appliquer une méthode de recherche d'utilisateur.\\
+L'objet paysDao va utiliser JDBC pour chercher dans une base de données spécifiques si le nom d'utilisateur et le mot de passe sont corrects, si c'est le cas, la connexion est validée.
+Une fois la connexion effectuée, l'utilisateur peut cliquer sur ajouter, supprimer ou modifier selon son niveau d'autorisation.\\
+Quand un ajout, une modification ou une suppression est validée l'application récupère un objet paysMetier grâce au fichier de configuration XML géré par Spring et Spring-WS.\\
+Cet objet va créer un objet paysDao et lui appliquer la méthode demandée.\\
+L'objet paysDao va utiliser JDBC pour effectuer la méthode demandée et ajouter, modifier ou supprimer un pays dans la base de données.\\
+
+
+\newpage
+

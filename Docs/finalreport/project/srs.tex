@@ -1,0 +1,65 @@
+\chapter{Spécification des Systèmes Dynamiques}
+\section{Technologies utilisées}
+\subsection{Maven}
+\paragraph{} Maven est un outil de gestion et d'automatisation de projets developpé par la Fondation Apache Software.\\
+C'est un outil developpé pour Java, il permet de créer une application à partir de ses sources et d'informations telles que ses dépendances et modules externes.\\
+Maven optimise la création et assure le bon déroulement de la fabrication de l'application.\\
+Il utilise le paradigme du Project Object Model qui décrit le projet dans un fichier contenant les dépendances, les modules externes, l'ordre de production, le numéro de version, etc...\\
+\paragraph{}
+Nous avons utilisé cet outil dans le cadre de ce projet car il nous a permis d'optimiser la production des applications dévelopées.\\
+Nous avons géneré des sources et centralisé les dépendances et librairies nécessaires grâce à Maven ce qui a permis d'avoir une vision claire du projet et de l'état d'avancement.\\
+
+\subsection{Spring}
+\paragraph{} Spring est un framework libre et open-source de développement Java sous licence Apache.\\
+Spring est considéré comme un conteneur léger qui crée et met en relation des objets.\\
+Il se base sur trois concepts clés qui sont l'inversion de contrôle,qui donne le contrôle de l'éxécution au framework plutôt qu'à l'application elle-même, la programmation orientée aspect, qui sépare le coeur de l'application des aspects techniques, et une couche d'abstraction.\\ 
+\paragraph{}
+Nous avons utilisé Spring car c'est un framework très puissant et facilement accessible.\\
+Il nous a permis de facilement définir l'infrastructure de nos applications et de gérer tous les objets présents à la création et à l'exécution de ces applications.\\
+
+\subsection{SpringWS}
+\paragraph{} Spring Web Services est un produit issu du framework Spring permettant la création de Web services.\\
+Ce framework facilite la création et l'utilisation de Web services créés en utilisant le protocole SOAP (voir sous-section SOAP et SoapUI).\\
+Comme il est basé sur Spring, Spring-WS crée des web services très flexibles et permet même la mise en place de concepts inspirés de Spring comme l'injection de dépendances.\\
+\paragraph{}
+Nous avons utilisé Spring-WS pour sa capacité à créer des web services à la fois flexibles et complets mais aussi pour sa facilité d'intégration aux composants Spring déjà présents dans les différents applications.\\
+Nous avons ainsi pu réutiliser les différentes configurations et expériences liées à Spring que nous avions déjà pour accélerer la production et la mise en place du web service pays.\\
+
+\subsection{Soap et SoapUI}
+\paragraph{} SOAP était l'acronyme de Simple Object Access Protocol, un protocole de Remote Procedure Call (RPC) qui permet d'appeler des méthodes à distances.\\
+SOAP permet la transmission de messages entre objets distants à l'aide du protocole HTTP ou SMTP.
+Il utilise des métadonnées et est composé de deux parties, une enveloppe contenant des informations sur le message et un modèle de données qui contient les données à transmettre.\\
+\paragraph{}
+Nous avons utilisé SOAP car c'est un protocole qui est indépendant de la plate-forme et du langage utilisé, ce qui a facilité le développement du web service.\\
+\paragraph{}
+SoapUI est une application open source qui permet le test de web services utilisant le protocole SOAP.\\
+Il permet d'inspecter un web service, de simuler une éxécution et de réaliser des tests fonctionnels.\\
+\paragraph{}
+Nous avons utilisé SoapUI afin de tester notre web service et de localiser les éventuels problèmes de conception ou d'éxécution.\\
+
+\subsection{JAXB}
+\paragraph{} JAXB est l'acronyme de Java Architecture for XML Binding, une interface de programmation Java qui permet la création de classes Java à partir d'un fichier XSD et inversement.\\
+Grâce à un mapping entre les types XML et Java, il assure la création des classes, de leurs constructeurs ainsi que leurs mutateurs et accesseurs.\\
+\paragraph{}
+Nous avons utilisé JAXB car il facilite l'utilisation de XML avec Java grâce à son système de schémas.\\
+Le framework Spring se configurant à l'aide de fichiers XML, l'utilisation de JAXB a été encore plus importante afin d'être le plus efficient possible.\\
+
+\subsection{Tomcat}
+\paragraph{} Tomcat est un conteneur web (serveur) libre appartenant à la Fondation Apache.\\
+En plus d'être un serveur, Tomcat gère les servlets ainsi que les Java Server Pages (JSP).\\
+Il a été developpé en Java et est donc indépendant de la plate-forme pour son éxécution.\\
+Nous avons utilisé Tomcat car c'est aujourd'hui le serveur HTTP multiplate-forme le plus interessant.\\
+De plus Spring intègre directement Tomcat, ce qui a facilité la création et le developpement des applications.\\
+
+\subsection{JDBC}
+\paragraph{} JDBC est l'acronyme de Java DataBase Connectivity, une interface de programmation Java permettant la communication entre une application Java et une base de données.\\
+Cette API fournit des méthodes pour rechercher et modifier une base de données.\\
+Nous avons utilisé JDBC pour la communication entre notre référentiel de pays et notre web service.\\
+Sa facilité d'utilisation nous a permis de rapidement mettre en place une liaison sûre entre notre base de données et notre web service.\\
+
+\subsection{JUnit}
+\paragraph{}JUnit est un framework de test unitaire pour Java.\\
+JUnit utilise un système de TestCase qui contiennent des méthodes de test pour tester une classe et des TestSuite qui permettent d'éxécuter certains TestCase prédéfinis.\\
+Il permet ainsi de tester certaines parties précises des application pour détécter d'éventuelles erreurs conceptuelles ou de programmation.\\
+Nous avons utilisé JUnit pour tester les différentes classes crées dans l'ensemble des applications developpées.\\
+Cela nous a permis d'éviter de trouver des erreurs dans le code vers la fin du développement.\\

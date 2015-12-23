@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://spring.io/guides/gs-producing-web-service"
+           targetNamespace="http://spring.io/guides/gs-producing-web-service" elementFormDefault="qualified">
+           
+    <!--Genère la classe getPaysRequest qui demande le nom d'un pays -->
+    <xs:element name="getPaysRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="libelle" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--Genère la classe getPaysResponse qui donne un pays -->
+    <xs:element name="getPaysResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="pays" type="tns:pays"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <!--Genère la classe getAllPaysRequest qui demande la liste de tout les pays-->
+    <xs:element name="getAllPaysRequest">
+           <xs:complexType/>
+    </xs:element>
+    
+    <!--Genère la classe getAllPaysResponse qui donne une liste de pays avec tout leurs paramètre-->
+    <xs:element name="getAllPaysResponse">
+        <xs:complexType>
+            <xs:sequence>                
+                <xs:element minOccurs="0" maxOccurs="unbounded" name="Pays" nillable="true" type="tns:pays"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <!--Genère la classe getAllPaysDangerRequest qui utilise demande le boolean danger pour trier la liste de pays-->
+    <xs:element name="getAllPaysDangerRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="danger" type="xs:boolean"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <!--Genère la classe getListPaysResponse qui donne la liste de pays correspondant a getAllPaysDangerRequest-->  
+    <xs:element name="getAllPaysDangerResponse">
+        <xs:complexType>
+            <xs:sequence>                
+                <xs:element minOccurs="0" maxOccurs="unbounded" name="Pays" nillable="true" type="tns:pays"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <!--Genère la classe getAllPaysNameRequest qui demande la liste de nom de tout les pays -->
+    <xs:element name="getAllPaysNameRequest">       
+        <xs:complexType />
+    </xs:element>
+    
+    <!--Genère la classe getAllPaysNameResponse qui donne la liste de nom de Pays-->
+    <xs:element name="getAllPaysNameResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="unbounded" name="paysNom" nillable="true" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--Genère la classe getListPaysRequest qui utilise demande plusieurs arguments pour trier la liste de pays-->    
+    <xs:element name="getListPaysRequest">
+    <xs:complexType>
+            <xs:sequence>
+                <xs:element name="indicatif" nillable="true" type="xs:string"/>
+                <xs:element name="libelle" nillable="true" type="xs:string"/>
+                <xs:element name="monnaie_code" nillable="true" type="xs:string"/>
+                <xs:element name="monnaie_perdiem" nillable="true" type="xs:float"/>
+                <xs:element name="monnaie_perdiem_arg" nillable="true" type="xs:string"/>
+                <xs:element name="taux_change" nillable="true" type="xs:float"/>
+                <xs:element name="taux_change_arg" nillable="true" type="xs:string"/>
+                <xs:element name="danger" nillable="true" type="xs:boolean"/>          
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element> 
+
+    <!--Genère la classe getListPaysResponse qui donne la liste de pays correspondant a getListPaysRequest-->
+    <xs:element name="getListPaysResponse">
+        <xs:complexType>
+            <xs:sequence>                
+                <xs:element minOccurs="0" maxOccurs="unbounded" name="Pays" nillable="true" type="tns:pays"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>   
+    
+    <!-- Genere la classe Pays -->
+    <xs:complexType name="pays">
+        <xs:sequence>
+            <xs:element name="ID" type="xs:integer"/>            
+            <xs:element name="indicatif" type="xs:string"/>
+            <xs:element name="nationalite" type="xs:string"/> 
+            <xs:element name="libelle_en" type="xs:string"/> 
+            <xs:element name="libelle_fr" type="xs:string"/>
+            <xs:element name="monnaie_code" type="xs:string"/>
+            <xs:element name="monnaie_perdiem" type="xs:float"/>
+            <xs:element name="taux_change" type="xs:float"/>
+            <xs:element name="danger" type="xs:boolean"/>
+            <xs:element name="drapeau" type="xs:string"/>            
+            <xs:element name="coords1" type="xs:string"/>
+            <xs:element name="coords2" type="xs:string"/>
+            <xs:element name="coords3" type="xs:string"/>
+            <xs:element name="coords4" type="xs:string"/>     
+            <xs:element name="coords5" type="xs:string"/>                   
+        </xs:sequence>
+    </xs:complexType>
+    
+</xs:schema>

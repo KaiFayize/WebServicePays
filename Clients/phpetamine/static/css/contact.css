@@ -1,0 +1,90 @@
+#titre_site {
+	text-align:center;
+	font-family: "Times New Roman", Times, serif;
+	color: #a3cd39;
+	font-size: 2.0em;
+	text-shadow: 0px 0px 10px #ccc;
+}
+
+fieldset {
+	padding: 0 .5em .5em;
+	margin: 1em 0 .5em;
+	border: solid 0.16em #666;
+	width:40%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+textarea{
+	display:block;
+	width:90%;
+	height: 30%;
+	margin: 0 auto;
+	border: solid 0.15em #aaa;
+	background-color:#eee;
+}
+label.gauche{
+	float:left;
+	width:30%;
+	padding-right: .5em;
+	text-align:right;
+	font-weight: bold;
+	color: #666;
+}
+
+select, #de_ou input{
+	width: 14em;
+	margin-bottom: .5em;
+	border: solid 0.15em #aaa;
+	background-color: #EDEDED;
+}
+
+#de_qui em{
+	display: block;
+	/*position:relative;*/
+	top: .5em;
+	padding-top: .2em;
+	margin-top: .5em;
+	border-top:solid;
+	font-style: normal;
+	font-weight: bold;
+	color: #999;
+}
+
+#de_quoi input {
+	vertical-align:middle;
+}
+#de_ou input:focus, textarea:focus, select:focus;{
+	border-color: #000;
+	background-color: #F7F7F7;
+	color:#000;
+}
+label{
+	cursor: pointer;
+}
+label:hover{
+	text-decoration: underline;
+}
+
+optgroup:before{
+	padding: .1em 0 .2em;
+	border-top: solid 0.15em #aaa;
+	text-indent: 1em;
+	background-color: #666;
+	color:#FFF;
+}
+option{
+	text-indent: 3.5em;
+	background-color: #f7f7f7;
+	color:#666;
+}
+
+footer {
+	margin-top: 3.2em;
+	border: 1px solid;
+}
+
+footer p {
+	text-align: center;
+}

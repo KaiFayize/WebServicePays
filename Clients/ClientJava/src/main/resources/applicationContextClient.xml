@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd"  >
+<beans>     
+    
+    <bean id="config" class="clientconfig.Config"
+    init-method="init" destroy-method="close">
+
+        <property name="defaultUri">
+            <value>http://localhost:8080/ws/</value>
+        </property>
+        <property name="contextPath">
+            <value>pays.wsdl</value>
+        </property>
+    </bean>
+
+</beans>

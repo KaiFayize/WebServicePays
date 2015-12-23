@@ -1,0 +1,256 @@
+/*
+	Ce fichier contient tous les style css pour les deux menus
+	principale de l'utilisation du web service Etamine
+
+
+	@author 		Gisio TABERA RANDRIAMANANTSOA
+	@date 			18 Mars 2015
+	@version		1.0
+*/
+html{ 
+	width:100%; 
+} 
+
+
+td{
+	padding:1.35em;
+}
+
+
+h2 {
+	text-align: center;
+	font-family: "Times New Roman", Times, serif;
+	color: #1111FF;
+	
+}
+
+legend {
+	text-align: center;
+}
+
+img {
+	width: 50%;
+	height: 45%;
+	border: 1px solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+}
+
+footer {
+	position: relative;
+    margin-top: -150px; /* VALEUR NEGATIVE DE LA HAUTEUR DU FOOTER */
+    height: 150px;
+    clear:both;
+	background-color:#000;
+}
+
+footer p {
+	text-align: center;
+	font-family: "Times New Roman", Times, serif;
+}
+
+input[type=text] {
+	padding:5px; border:2px solid #ccc; 
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+input[type=text]:focus {
+	border-color:#333; 
+}
+
+
+
+input[type=submit] {
+	padding:5px 15px; 
+	background:#1111FF; 
+	border:0 none;
+	cursor:pointer;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color:#FFF;
+}
+
+input[type=reset] {
+	padding:5px 15px; 
+	background:#1111FF; 
+	border:0 none;
+	cursor:pointer;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color: #FFF;
+}
+
+#titre_site {
+	text-align: center;
+	font-family: "Times New Roman", Times, serif;
+	color: #1111FF;
+	font-size: 2.0em;
+	text-shadow: 0px 0px 10px #ccc;
+	position: absoulte;
+}
+
+
+#menu{
+	background: #000;
+	height:40px;
+	margin-bottom:5px;
+} 
+
+#menu ul{
+	margin:0;
+	padding:0;
+	line-height:30px;
+	width:100%;
+	display:block;
+}
+
+#menu li{
+	list-style:none;
+	float:left;
+	display:inline;
+	position:relative;
+	background:#000;
+	white-space:nowrap:
+}
+
+#menu ul li {
+	float: left;
+	list-style: none;
+}
+
+#menu ul li a{
+	color:#FFF;
+	text-decoration:none;
+	width:350px;
+	height:30px;
+	display:inline-block;
+	text-align:center;
+	text-shadow:1px 1px;
+	line-height : 40px;
+	padding: 0 10px;
+}
+
+
+#menu ul ul{
+	position:absolute;
+	top:30px;
+	visibility:hidden;
+}
+
+
+#menu ul li:hover ul{
+	visibility:visible;	
+} 
+
+
+
+#menu li:hover
+{
+	background-color:#1111FF;
+	color:#FFF;
+}
+
+
+#menu ul li ul a:hover{
+	color:#FFF;
+	background-color:#1111FF;
+}
+
+
+#choix
+{
+ padding:5em;
+ border-radius: 7px;
+ -moz-border-radius:7px;
+ -webkit-border-radius:7px;
+ height : auto;
+ width : auto;
+}
+
+#afficher_danger{
+	padding-top: 1em;
+	width: 50%;
+	margin: auto;
+
+}
+
+#affier_danger fieldset
+{
+	font-size : 1.2em;
+	margin: auto;
+	max-height: 90px;
+	max-width: 700px;  
+	text-align: center;
+}
+
+
+
+#risque_pays
+{
+ padding: 1.5em;
+ border-radius: 7px;
+ -moz-border-radius:7px;
+ -webkit-border-radius:7px;
+ height : auto;
+ width : auto;
+}
+
+
+#explication{
+	padding-top: 5em;
+	width: 70%;
+	margin: auto;
+}
+
+#explication fieldset{
+	font-size : 1.5em;
+	margin: auto;
+}
+
+#precis{
+	padding-top: 5em;
+	width: 70%;
+	margin: auto;
+}
+#precis fieldset{
+	font-size : 1.5em;
+	margin: auto;
+}
+
+#men{
+ position: center:
+}
+
+
+#response tr:nth-child(2n){ 
+       background-color:#cccccc;
+       color: #000;
+       text-align: center;
+       width: 74px;
+       margin: auto;
+} 
+ 
+
+#response tr:nth-child(2n+1){ 
+       background-color:#eeeeee; 
+       color: #000;
+       text-align: center;
+       width: 74px;
+       margin: auto;
+}
+
+#liste_pays tr:nth-child(2n){ 
+       background-color:#cccccc;
+       color: #000;
+       text-align: center;
+       width: 74px;
+} 
+ 
+#liste_pays tr:nth-child(2n+1){ 
+       background-color:#eeeeee;
+       color: #000; 
+       text-align: center;
+       width: 74px;
+}

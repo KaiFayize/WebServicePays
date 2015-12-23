@@ -1,0 +1,22 @@
+\contentsline {chapter}{Contents}{2}
+\contentsline {chapter}{\chapternumberline {1}Pr\IeC {\'e}sentation du Projet}{3}
+\contentsline {section}{\numberline {1.1}Contexte}{3}
+\contentsline {section}{\numberline {1.2}Objet}{3}
+\contentsline {section}{\numberline {1.3}Organisation}{4}
+\contentsline {section}{\numberline {1.4}Environnement}{4}
+\contentsline {section}{\numberline {1.5}Outils compl\IeC {\'e}mentaires}{5}
+\contentsline {chapter}{\chapternumberline {2}Objectifs}{5}
+\contentsline {section}{\numberline {2.1}Points cl\IeC {\'e}s sur les besoins fonctionnels}{5}
+\contentsline {section}{\numberline {2.2}Limites du projet}{6}
+\contentsline {chapter}{\chapternumberline {3}Sp\IeC {\'e}cifications}{6}
+\contentsline {section}{\numberline {3.1}Base de donn\IeC {\'e}es}{6}
+\contentsline {section}{\numberline {3.2}Web Service}{9}
+\contentsline {section}{\numberline {3.3}Clients Web Service}{10}
+\contentsline {section}{\numberline {3.4}Application de gestion}{11}
+\contentsline {chapter}{\chapternumberline {4}Livrables}{13}
+\contentsline {section}{\numberline {4.1}Documents \IeC {\`a} remettre}{13}
+\contentsline {section}{\numberline {4.2}Programmes \IeC {\`a} remettre}{14}
+\contentsline {chapter}{\chapternumberline {5}Calendrier}{14}
+\contentsline {section}{\numberline {5.1}Date de fin de projet}{14}
+\contentsline {section}{\numberline {5.2}\IeC {\'E}ch\IeC {\'e}ances interm\IeC {\'e}diaires}{15}
+\contentsline {section}{\numberline {5.3}Diagramme de GANTT}{15}

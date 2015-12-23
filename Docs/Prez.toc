@@ -1,0 +1,11 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Le Web Service}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Qu'est-ce qu'un web service ?}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Notre projet}{7}{0}{1}
+\beamer@sectionintoc {2}{D\IeC {\'e}veloppement du projet}{13}{0}{2}
+\beamer@subsectionintoc {2}{1}{R\IeC {\'e}alisation}{13}{0}{2}
+\beamer@subsectionintoc {2}{2}{Choix Techniques}{17}{0}{2}
+\beamer@sectionintoc {3}{Difficult\IeC {\'e}s Rencontr\IeC {\'e}es}{21}{0}{3}
+\beamer@subsectionintoc {3}{1}{Technologies inconnues}{21}{0}{3}
+\beamer@subsectionintoc {3}{2}{Complications durant le d\IeC {\'e}veloppement}{23}{0}{3}

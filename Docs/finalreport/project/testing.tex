@@ -1,0 +1,20 @@
+\chapter{Tests et Assurance Qualité}
+\paragraph{} Le projet étant destiné à un public ouvert il était essentiel que les fonctions soient testées, au moins sur les clients et le WebService.
+Les tests vérifient les principales fonctionnalités des applications.
+
+
+\section{Méthodes de test et résultats}
+\subsection{Tests du client Java}
+\paragraph{} Les méthodes de test du client JAVA servent à tester les différentes réponses du WebService aux différentes requêtes. 
+\lstinputlisting[language=Java, firstline=47, lastline=126]{project/code/PaysClientTest.java}
+
+\subsection{Tests du WebService}
+\paragraph{} Les méthodes de test du WebService sont principalement liées à la DAO. Elles testent le lien entre les requetes et la Base de Données. 
+\lstinputlisting[language=Java, firstline=39, lastline=120]{project/code/TestJDBCWS.java}
+
+
+\subsection{Tests de l'Application de Gestion}
+\paragraph{} Les méthodes de l'Application de Gestion servent à tester les interactions avec la base de donnée comme l'ajout, la suppression ou la modification de pays.
+\lstinputlisting[language=Java, firstline=40, lastline=170]{project/code/TestJDBC.java}
+
+\textbf{Note: Les tests doivent s'effectuer manuellement et permettent à l'utilisateur de comprendre le fonctionnement du code}
